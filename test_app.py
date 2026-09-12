@@ -10,4 +10,4 @@ def client():
 def test_home_route(client):
     response = client.get("/")
     assert response.status_code == 200
-    assert b"Hello World!" in response.data
+    assert b"Automatic End-to-End CI/CD is fully working!" in response.data
